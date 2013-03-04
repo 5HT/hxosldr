@@ -1,0 +1,126 @@
+
+  Documentation on Hexile OS Loader 3.0
+  
+  1. User Guide
+  2. Limitations
+  3. README.TXT
+  
+  1. Users Guide
+  ~~~~~~~~~~~~~~
+  
+  How to work with HXOSLDR? It's quite simply.
+  Let you have one OS already installed, configured and in stable
+  state. If you wanna install new OS you need to install HXOSLDR
+  at first. Then you install your new OS which will replace
+  HXOSLDR code from MBR (that's OK don't worry). Then you need to
+  add new OS from HXOSLDR (see Point 4 of main menu). When you add new
+  OS you may change the name (Point 3) of OS. HXOSLDR install
+  automatically your new OS. If you wanna install the third OS in
+  HXOSLDR you need to install and configure OS and then again run
+  HXOSLDR. And so on.
+  
+  To Setup Hexile OS Loader just type HXOSLDR.EXE then you can
+  observe something like this:
+  
+  Hexile OS Loader 3.0
+  
+  List of Commands:
+
+    1. View Config Table;
+    2. Edit Name for Selected OS
+    3. Add OS
+    4. Delete Last Installed OS
+    5. Change HDD
+    6. Install Hexile OS Loader
+    7. Quit
+
+    Current HDD: 0x80
+  
+  Make Your Choice: _
+  
+  Let's talk from the first
+  
+  1. View Config Table
+  
+  This menu variant dislplay all OS installed by HXOSLDR on
+  your drive. In case you haven't any OS you will be
+  attached by the message.
+  
+  "There is no Operating Systems installed"
+  
+  2. Edit Name for Selected OS
+  
+  You will be asked by HXOSLDR to assign a new name to
+  selected operating system which you must select at first.
+  
+  3. Add OS
+  
+  This case of main menu will automatically install OS which is being
+  currently configured, installed and has been already working.
+  HXOSLDR removes native OS MBR from Sector 1 to the internal area.
+  After installing a new OS you need to select Point 7 of the main menu
+  to write HXOSLDR.BIN code directly into Sector 1.
+  
+  4. Delete Last Installed OS
+  
+  This Point of menu will just delete from menu Last Installed OS
+  on your disk.
+  
+  5. Change HDD
+  
+  This Point is similiar to FDISK's "Change current fixed disk
+  drive" (Selection 5 in FDISK Menu). It just reselects the disk
+  with which you will be working during the current session.
+  
+  6. Install Hexile OS Loader
+  
+  Having entered this Point you will write HXOSLDR.BIN code to your MBR.
+  Remember that you MUST select this variant when you have already
+  added OS by Point 4 of main menu.
+  
+  7. Quit
+  
+  Simply quit Hexile OS Loader Setup Program.
+  
+  2. Limitations
+  ~~~~~~~~~~~~~~
+  
+  Let's talk about the limitations of this beautiful program.
+  Here they are:
+  
+    A) HXOSLDR cannot manage the multiple HDD.
+       It means that it works only on one HDD.
+    B) HXOSLDR has a limit on the number of OSes. This number is 6.
+       I haven't seen any guy that has more than 4 OSes.
+       But who wants i can rewrite it to 100 OSes (it doesn't matter).
+
+    ... and that's all
+    
+  3. README.TXT
+  ~~~~~~~~~~~~~
+  
+  The HXOSLDR is a package of some files:
+  
+    HXOSLDR.BIN == The image of the Loader
+    HXOSLDR.EXE == The Setup Program
+    HXOSLDR.DOC == This manual
+    WRITE.EXE   == Helpful utility
+    READ.EXE    == another one ...
+    MBR.EXE     == ... and one more
+    SOURCES.RAR == Sources (!!!) of it
+    
+  ATTENTION EVERYONE:
+  
+    1. All rights belong to nobody.
+    2. Everybody can do with it anything he/she wants.
+    3. You may sell it, patent it, rewrite it under your name.
+    4. I can give it to anyone who wants it without any money.
+    5. I can also support it without any money.
+    6. I don't take care about any problems which may appear ...
+    
+  Before you install it copy your MBR into a file.
+  If you wanna find me - mail me at speedman@astral.ntu-kpi.kiev.ua.
+
+  Copyright (c) 1998 Hexile Crew
+  Copyright (c) 1998 Maxim Sochatsky
+  
